@@ -13,7 +13,7 @@ function Navbar() {
     }
 
     return (
-        <div className='bg-white fixed w-full h-[80px] flex justify-between items-center px-4 text-black text-3xl font-bold'>
+        <div className='bg-white w-full h-[50px] md:h-[80px]  flex justify-between items-center px-4 text-black text-3xl font-bold'>
             <div>
                 <img src={Logo} alt="Logo" className='w-[50px]' />
             </div>
