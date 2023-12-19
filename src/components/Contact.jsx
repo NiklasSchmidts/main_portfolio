@@ -3,6 +3,7 @@ import axios from "axios";
 
 function Contact() {
   const buttonRef = useRef(null);
+  const formRef = useRef(null);
 
   return (
     <div
@@ -18,6 +19,7 @@ function Contact() {
           </p>
         </div>
         <form
+          ref={formRef}
           onSubmit={async (event) => {
             event.preventDefault();
             const formData = new FormData(event.target);
@@ -32,6 +34,7 @@ function Contact() {
               setTimeout(() => {
                 buttonRef.current.innerHTML = "Submit!";
                 buttonRef.current.style.backgroundColor = "";
+                formRef.current.reset();
               }, 2000);
             } catch (error) {
               console.log("Error submitting form", error);
