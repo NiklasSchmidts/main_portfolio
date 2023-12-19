@@ -1,6 +1,7 @@
 import React from 'react'
 import Myself from '../assets/myself.jpg'
 import { TiArrowDownThick as ArrowDown } from "react-icons/ti";
+import { Link } from 'react-scroll';
 
 function Home() {
     return (
@@ -8,7 +9,7 @@ function Home() {
         {/* description */}
         <div
           id="home"
-          className="flex flex-col justify-center items-start h-full text-white font-semibold md:pl-32 lg:pt-0 text-base md:text-xl p-10"
+          className="flex flex-col justify-center items-start h-full text-white font-medium md:pl-32 lg:pt-0 text-base md:text-xl p-10"
         >
           <h1 className="">Hi, my name is</h1>
           <h1 className="font-bold">Niklas Schmidts</h1>
@@ -22,7 +23,9 @@ function Home() {
             development.
           </h1>
           <button className="flex items-center border-solid border-2 border-white p-1 pl-2 mt-2 hover:p-3 duration-300">
-            View About
+            <Link to="about" smooth={true} duration={500}>
+              View About
+            </Link>
             <span className="ml-1">
               <ArrowDown />
             </span>
