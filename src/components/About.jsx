@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-scroll";
+import { TiArrowDownThick as ArrowDown } from "react-icons/ti";
 
 function About() {
   return (
@@ -20,6 +22,14 @@ function About() {
               looking forward to expanding my knowledge and implementing many
               interesting projects.
             </p>
+            <button className="flex items-center border-solid border-2 border-white p-1 pl-2 mt-2 hover:p-3 duration-300">
+              <Link to="skills" smooth={true} duration={500}>
+                View Skills
+              </Link>
+              <span className="ml-1">
+                <ArrowDown />
+              </span>
+            </button>
           </div>
         </div>
       </div>
