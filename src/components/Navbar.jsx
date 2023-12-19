@@ -3,7 +3,6 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin, FaXing } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
-import { IoIosArrowDropupCircle as ArrowUp } from "react-icons/io";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -12,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-white w-full h-[50px] md:h-[80px]  flex justify-between items-center px-4 text-black text-3xl font-bold">
+    <div className="bg-white w-full h-[50px] md:h-[80px] flex justify-between items-center px-4 text-black text-3xl font-bold">
       <div>
         <img src={Logo} alt="Logo" className="w-[50px]" />
       </div>
