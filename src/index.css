@@ -14,3 +14,7 @@
         @apply cursor-pointer;
     }
 }
+
+button {
+    cursor: none;
+}
