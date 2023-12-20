@@ -9,7 +9,7 @@ function Bottom() {
         <h1 className="font-bold text-xs md:text-lg">Copyright © 2023 Niklas Schmidts</h1>
       </div>
       <div className="fixed z-10 bottom-10 right-10">
-        <Link to="home" smooth={true} duration={500}>
+        <Link to="menu" smooth={true} duration={500}>
           <ArrowUp className="text-white text-5xl cursor-pointer"></ArrowUp>
         </Link>
       </div>

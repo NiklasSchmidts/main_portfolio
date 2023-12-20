@@ -17,7 +17,7 @@ function Navbar() {
       </div>
 
       {/* menu */}
-      <ul onClick={handleClick} className="hidden md:flex">
+      <ul id="menu" onClick={handleClick} className="hidden md:flex">
         <li className="border-b-4 border-transparent hover:border-black duration-200">
           <Link to="home" smooth={true} duration={500}>
             Home

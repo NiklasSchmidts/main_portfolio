@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '25': '25ms',
+        '50': '50ms',
+      }
+    },
   },
   plugins: [],
 }
