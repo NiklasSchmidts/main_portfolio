@@ -18,3 +18,9 @@
 button {
     cursor: none;
 }
+
+@media (hover: none) {
+    .custom-cursor {
+        display: none !important;
+    }
+}

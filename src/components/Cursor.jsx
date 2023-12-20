@@ -25,12 +25,12 @@ function Cursor() {
     }, [])
 
     return (
-        <>
+        <div class='custom-cursor'>
             <div ref={circleRef} className='fixed top-0 left-0 border-[#adb5bd] bg-none rounded-full z-20 w-8 h-8 border-2 transition-all duration-50 pointer-events-none'>
             </div>
             <div ref={dotRef} className='fixed top-40 left-50 bg-white rounded-full z-20 w-2 h-2 pointer-events-none'>
             </div>
-        </>
+        </ div>
     )
 }
 
